@@ -14,16 +14,22 @@
 }
 
 header .header__logo {
+  width: 162px;
   margin-bottom: 14px;
   margin-top: 14px;
 }
 
+.location {
+  background-color: #eaeaea;
+}
 .location__info {
   gap: 17px;
+  margin: 15px 0;
 }
 .location__info h2 {
+  color: #353535;
   font-size: 16px;
-  font-weight: medium;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=Style.css.map */

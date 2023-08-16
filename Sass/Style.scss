@@ -3,10 +3,11 @@
 $color-primary: #9356dc;
 $second-color: #ff79da;
 $third-color: #99e2d0;
+$backgroundcolor-main: #eaeaea;
 
 @mixin sixteen-px {
   font-size: 16px;
-  font-weight: medium;
+  font-weight: normal;
 }
 
 * {
@@ -25,14 +26,20 @@ $third-color: #99e2d0;
 
 header {
   .header__logo {
+    width: 162px ;
     margin-bottom: 14px;
     margin-top: 14px;
   }
 }
 
-.location__info {
-  gap: 17px;
-  h2 {
-    @include sixteen-px;
+.location {
+  background-color: $backgroundcolor-main;
+  &__info {
+    gap: 17px;
+    margin: 15px 0;
+    h2 {
+      color: #353535;
+      @include sixteen-px;
+    }
   }
 }
