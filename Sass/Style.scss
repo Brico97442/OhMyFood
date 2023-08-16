@@ -74,24 +74,24 @@ header {
   }
 }
 
-.fonctionnement{
-    @include flex-column;
-    padding: 0 20px;
-    gap: 20px;
-    &-btn {
-        display: flex;
-        width: 100%;
-        @include sixteen-px;
-        padding: 28px 0 ;
-        border-radius: 20px;
-        border: none;
-        .number {
-            background: $color-primary;
-            width: 24px;
-            height: 24px;
-            border-radius: 24px;
-            color: #fff;
-        }
-        
+.fonctionnement {
+  @include flex-column;
+  padding: 0 20px;
+  gap: 20px;
+  &-btn {
+    display: flex;
+    width: 100%;
+    max-width: 335px;
+    @include sixteen-px;
+    padding: 28px 0;
+    border-radius: 20px;
+    border: none;
+    .number {
+      background: $color-primary;
+      width: 24px;
+      height: 24px;
+      border-radius: 24px;
+      color: #fff;
     }
+  }
 }
