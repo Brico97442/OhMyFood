@@ -35,7 +35,8 @@ header .header__logo {
 .explorer {
   flex-direction: column;
   text-align: center;
-  background-color: #D2D2D2;
+  background-color: #eaeaea;
+  padding: 0 30px;
 }
 .explorer__btn {
   font-size: 16px;
@@ -43,6 +44,10 @@ header .header__logo {
 }
 .explorer h1 {
   max-width: 275px;
+}
+.explorer p {
+  font-size: 17px;
+  font-weight: lighter;
 }
 
 /*# sourceMappingURL=Style.css.map */
