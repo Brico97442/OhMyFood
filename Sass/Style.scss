@@ -1,4 +1,5 @@
 /********général********/
+
 $color-primary : #9356DC;
 $second-color : #FF79DA ;
 $third-color : #99E2D0 ;
@@ -9,10 +10,6 @@ $third-color : #99E2D0 ;
     padding: 0;
 }
 
-
-
-
-
 /********Header********/
 
 header {
@@ -21,8 +18,22 @@ header {
     justify-content: center;
     align-items: center;
     
-    &__logo {
+    .header__logo {
         margin-bottom: 14px;
         margin-top: 14px;
     }
+
 }
+
+.location {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}   
