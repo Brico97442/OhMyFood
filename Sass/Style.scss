@@ -48,7 +48,10 @@ header {
     flex-direction: column;
     text-align: center;
     background-color: $background-section-first-color;
-    h1{
+    &__btn {
+        @include sixteen-px;
+    }
+    h1 {
         max-width: 275px;
     }
 }

@@ -35,6 +35,11 @@ header .header__logo {
 .explorer {
   flex-direction: column;
   text-align: center;
+  background-color: #D2D2D2;
+}
+.explorer__btn {
+  font-size: 16px;
+  font-weight: 500;
 }
 .explorer h1 {
   max-width: 275px;
