@@ -3,11 +3,11 @@
 $color-primary: #9356dc;
 $second-color: #ff79da;
 $third-color: #99e2d0;
-$background-section-first-color: #eaeaea;
+$background-section-first-color: #D2D2D2;
 
 @mixin sixteen-px {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 * {
@@ -51,12 +51,21 @@ header {
     padding: 0 30px;
     &__btn {
         @include sixteen-px;
+        padding: 13px 19px;
+        border-radius: 25px;
+        border: none;
+        background: linear-gradient( $second-color,$color-primary);
+        color: #fff;
+        margin-bottom: 57px;
+        margin-top: 27px;
     }
     h1 {
         max-width: 275px;
+        margin-top: 43px;
     }
     p {
         font-size: 17px;
         font-weight: lighter;
+        margin-top: 10px;
     }
 }

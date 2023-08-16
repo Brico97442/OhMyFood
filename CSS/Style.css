@@ -29,25 +29,34 @@ header .header__logo {
 .location__info h2 {
   color: #353535;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .explorer {
   flex-direction: column;
   text-align: center;
-  background-color: #eaeaea;
+  background-color: #D2D2D2;
   padding: 0 30px;
 }
 .explorer__btn {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  padding: 13px 19px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: #fff;
+  margin-bottom: 57px;
+  margin-top: 27px;
 }
 .explorer h1 {
   max-width: 275px;
+  margin-top: 43px;
 }
 .explorer p {
   font-size: 17px;
   font-weight: lighter;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=Style.css.map */
