@@ -10,6 +10,10 @@ $background-section-first-color: #d2d2d2;
   font-weight: 400;
 }
 
+@mixin flex-column {
+  flex-direction: column;
+}
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -68,4 +72,18 @@ header {
     font-weight: lighter;
     margin-top: 10px;
   }
+}
+
+.fonctionnement{
+    @include flex-column;
+    width: 100%;
+    &-btn {
+        display: flex;
+        width: 100%;
+        @include sixteen-px;
+        .number {
+            background: $color-primary;
+        }
+        
+    }
 }
