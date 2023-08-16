@@ -1,32 +1,38 @@
 /********général********/
 
-$color-primary : #9356DC;
-$second-color : #FF79DA ;
-$third-color : #99E2D0 ;
+$color-primary: #9356dc;
+$second-color: #ff79da;
+$third-color: #99e2d0;
+
+@mixin sixteen-px {
+  font-size: 16px;
+  font-weight: medium;
+}
 
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /********Header********/
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
-    
-    .header__logo {
-        margin-bottom: 14px;
-        margin-top: 14px;
-    }
-
+  .header__logo {
+    margin-bottom: 14px;
+    margin-top: 14px;
+  }
 }
 
 .location__info {
-    gap: 17px;
-}   
+  gap: 17px;
+  h2 {
+    @include sixteen-px;
+  }
+}
