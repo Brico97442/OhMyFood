@@ -12,11 +12,13 @@ $third-color : #99E2D0 ;
 
 /********Header********/
 
-header {
-    
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header {
     
     .header__logo {
         margin-bottom: 14px;
@@ -25,15 +27,6 @@ header {
 
 }
 
-.location {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    &__center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.location__info {
+    gap: 17px;
 }   

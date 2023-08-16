@@ -7,25 +7,19 @@
 }
 
 /********Header********/
-header {
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 header .header__logo {
   margin-bottom: 14px;
   margin-top: 14px;
 }
 
-.location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.location__center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.location__info {
+  gap: 17px;
 }
 
 /*# sourceMappingURL=Style.css.map */
