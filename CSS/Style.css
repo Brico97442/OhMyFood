@@ -35,7 +35,7 @@ header .header__logo {
 .explorer {
   flex-direction: column;
   text-align: center;
-  background-color: #D2D2D2;
+  background-color: #d2d2d2;
   padding: 0 30px;
 }
 .explorer__btn {
