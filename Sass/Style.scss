@@ -76,13 +76,16 @@ header {
 
 .fonctionnement{
     @include flex-column;
-    width: 100%;
+    padding: 0 20px;
     &-btn {
         display: flex;
         width: 100%;
         @include sixteen-px;
         .number {
             background: $color-primary;
+            width: 24px;
+            height: 24px;
+            border-radius: 24px;
         }
         
     }
