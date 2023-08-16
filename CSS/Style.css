@@ -36,5 +36,8 @@ header .header__logo {
   flex-direction: column;
   text-align: center;
 }
+.explorer h1 {
+  max-width: 275px;
+}
 
 /*# sourceMappingURL=Style.css.map */
