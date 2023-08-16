@@ -32,4 +32,9 @@ header .header__logo {
   font-weight: 500;
 }
 
+.explorer {
+  flex-direction: column;
+  text-align: center;
+}
+
 /*# sourceMappingURL=Style.css.map */
