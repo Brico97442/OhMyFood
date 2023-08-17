@@ -79,9 +79,21 @@ header {
 
 .fonctionnement {
   padding: 0 20px;
-  gap: 20px;
-  flex-wrap: wrap;
   margin-top: 48px;
+  @include flex-column;
+  
+  &-tittle{
+    text-align: start;
+    width: 100%;
+  } 
+  
+  &-wrap{
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 26px;
+    width: 100%;
+    justify-content: start;
+  }
   
   &-btn {
     display: flex;
@@ -94,6 +106,9 @@ header {
     padding: 27px 0px 27px 34px;
     border-radius: 20px;
     border: none;
+    .fa-solid {
+      color: #353535;
+    }
     
     .number {
       position: absolute;

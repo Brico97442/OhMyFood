@@ -61,9 +61,19 @@ header .header__logo {
 
 .fonctionnement {
   padding: 0 20px;
-  gap: 20px;
-  flex-wrap: wrap;
   margin-top: 48px;
+  flex-direction: column;
+}
+.fonctionnement-tittle {
+  text-align: start;
+  width: 100%;
+}
+.fonctionnement-wrap {
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 26px;
+  width: 100%;
+  justify-content: start;
 }
 .fonctionnement-btn {
   display: flex;
@@ -77,6 +87,9 @@ header .header__logo {
   padding: 27px 0px 27px 34px;
   border-radius: 20px;
   border: none;
+}
+.fonctionnement-btn .fa-solid {
+  color: #353535;
 }
 .fonctionnement-btn .number {
   position: absolute;
