@@ -53,6 +53,7 @@ header {
   text-align: center;
   background-color: $background-section-first-color;
   padding: 0 30px;
+  
   &__btn {
     @include sixteen-px;
     padding: 13px 19px;
@@ -63,10 +64,12 @@ header {
     margin-bottom: 57px;
     margin-top: 27px;
   }
+  
   h1 {
     max-width: 275px;
     margin-top: 43px;
   }
+  
   p {
     font-size: 17px;
     font-weight: lighter;
@@ -79,6 +82,7 @@ header {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 48px;
+  
   &-btn {
     display: flex;
     justify-content: left;
@@ -90,6 +94,7 @@ header {
     padding: 27px 0px 27px 34px;
     border-radius: 20px;
     border: none;
+    
     .number {
       position: absolute;
       left: -7px;
