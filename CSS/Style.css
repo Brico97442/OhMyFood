@@ -60,22 +60,27 @@ header .header__logo {
 }
 
 .fonctionnement {
-  flex-direction: column;
   padding: 0 20px;
   gap: 20px;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 48px;
 }
 .fonctionnement-btn {
   display: flex;
+  justify-content: left;
+  gap: 17px;
+  position: relative;
   width: 100%;
   max-width: 335px;
   font-size: 16px;
   font-weight: 400;
-  padding: 28px 0;
+  padding: 27px 0px 27px 34px;
   border-radius: 20px;
   border: none;
 }
 .fonctionnement-btn .number {
+  position: absolute;
+  left: -7px;
   background: #9356dc;
   width: 24px;
   height: 24px;
