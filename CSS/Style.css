@@ -112,6 +112,7 @@ header .header__logo {
   padding-top: 50px;
 }
 .restaurant__card__wrap {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -131,6 +132,14 @@ header .header__logo {
   display: flex;
   justify-content: space-between;
   padding: 13px;
+}
+.restaurant__card__content h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.restaurant__card__content p {
+  font-size: 17px;
+  font-weight: lighter;
 }
 .restaurant__card__content button {
   display: flex;
