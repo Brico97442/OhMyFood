@@ -82,12 +82,12 @@ header {
   margin-top: 48px;
   @include flex-column;
 
-  &-tittle {
+  &__tittle {
     text-align: start;
     width: 100%;
   }
 
-  &-wrap {
+  &__wrap {
     flex-wrap: wrap;
     gap: 25px;
     margin-top: 26px;
@@ -95,7 +95,7 @@ header {
     justify-content: start;
   }
 
-  &-btn {
+  &__btn {
     display: flex;
     justify-content: left;
     gap: 17px;
@@ -126,8 +126,15 @@ header {
 
 .restaurant {
   display: flex;
-  flex-direction: column;
+  @include flex-column;
   padding: 0 20px;
+  margin-top: 54px;
+
+  &__card-wrap {
+    display: flex;
+    @include flex-column;
+    gap: 18px;
+  }
 
   &__img {
     object-fit: cover;

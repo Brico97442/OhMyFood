@@ -64,18 +64,18 @@ header .header__logo {
   margin-top: 48px;
   flex-direction: column;
 }
-.fonctionnement-tittle {
+.fonctionnement__tittle {
   text-align: start;
   width: 100%;
 }
-.fonctionnement-wrap {
+.fonctionnement__wrap {
   flex-wrap: wrap;
   gap: 25px;
   margin-top: 26px;
   width: 100%;
   justify-content: start;
 }
-.fonctionnement-btn {
+.fonctionnement__btn {
   display: flex;
   justify-content: left;
   gap: 17px;
@@ -89,10 +89,10 @@ header .header__logo {
   border: none;
   background-color: #f6f6f6;
 }
-.fonctionnement-btn .fa-solid {
+.fonctionnement__btn .fa-solid {
   color: #353535;
 }
-.fonctionnement-btn .number {
+.fonctionnement__btn .number {
   position: absolute;
   left: -7px;
   background: #9356dc;
@@ -107,6 +107,11 @@ header .header__logo {
   flex-direction: column;
   padding: 0 20px;
   margin-top: 54px;
+}
+.restaurant__card-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .restaurant__img {
   object-fit: cover;
