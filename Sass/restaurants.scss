@@ -71,18 +71,18 @@ main {
   flex-direction: column;
 
   .background__img {
+    height: 275px;
     width: 100%;
     object-fit: cover;
   }
 
   .slide {
     padding: 0 13px;
-    @include flex-column;
     background-color: $background-section-first-color;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     position: relative;
-    top: -32px;
+    bottom: 55px;
 
     .menu {
       display: flex;
@@ -174,8 +174,7 @@ main {
       border: none;
       background: linear-gradient($second-color, $color-primary);
       color: #fff;
-      margin-bottom: 40px;
-      margin-top: 8px;
+      margin-top: 40px;
     }
   }
 }

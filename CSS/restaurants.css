@@ -39,17 +39,17 @@ main {
   flex-direction: column;
 }
 main .background__img {
+  height: 275px;
   width: 100%;
   object-fit: cover;
 }
 main .slide {
   padding: 0 13px;
-  flex-direction: column;
   background-color: #f2f2f2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   position: relative;
-  top: -32px;
+  bottom: 55px;
 }
 main .slide .menu {
   display: flex;
@@ -127,8 +127,7 @@ main .search__btn {
   border: none;
   background: linear-gradient(#ff79da, #9356dc);
   color: #fff;
-  margin-bottom: 40px;
-  margin-top: 8px;
+  margin-top: 40px;
 }
 
 footer {
