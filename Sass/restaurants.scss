@@ -60,6 +60,8 @@ main {
 
   .slide {
     
+    @include flex-column;
+
     &__tittle {
       width: 100%;
       max-width: 307px;
@@ -67,11 +69,13 @@ main {
       justify-content: space-between;
 
       button {
+        
         display: flex;
         border: none;
         background-color: #fff;
 
         .fa-solid:hover {
+          
           color: transparent;
           background-image: linear-gradient($color-primary, $second-color);
           background-clip: text;
@@ -80,6 +84,7 @@ main {
       }
 
       &__text {
+       
         h1 {
           font-family: "Shrikhand";
           font-size: 28px;

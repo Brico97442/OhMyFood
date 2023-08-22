@@ -34,6 +34,9 @@ main .background__img {
   width: 100%;
   object-fit: cover;
 }
+main .slide {
+  flex-direction: column;
+}
 main .slide__tittle {
   width: 100%;
   max-width: 307px;
