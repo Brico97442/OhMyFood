@@ -122,6 +122,10 @@ header .header__logo {
   border-radius: 15px;
   background-color: #fff;
 }
+.restaurant__card a {
+  text-decoration: none;
+  color: #000;
+}
 .restaurant__img {
   object-fit: cover;
   width: 100%;
