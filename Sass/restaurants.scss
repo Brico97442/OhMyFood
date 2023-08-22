@@ -34,8 +34,9 @@ $background-section-first-color: #f2f2f2;
 }
 
 body {
-background-color:$background-section-first-color;
+  background-color: $background-section-first-color;
 }
+
 .center {
   display: flex;
   justify-content: center;
@@ -45,15 +46,22 @@ background-color:$background-section-first-color;
 /********Header********/
 
 header {
+
   background-color: #fff;
   padding: 0 23px;
-  .header__logo {
+  
+  nav {
+
     width: 100%;
-    .header__logo__img {
-      padding-right: 14px;
-      width: 162px;
-      margin-bottom: 14px;
-      margin-top: 14px;
+    .header__logo {
+      width: 100%;
+      
+      .header__logo__img {
+        padding-right: 14px;
+        width: 162px;
+        margin-bottom: 14px;
+        margin-top: 14px;
+      }
     }
   }
 }
@@ -62,7 +70,6 @@ main {
   display: flex;
   flex-direction: column;
 
-  
   .background__img {
     width: 100%;
     object-fit: cover;
@@ -76,7 +83,7 @@ main {
     border-top-right-radius: 25px;
     position: relative;
     top: -32px;
-    
+
     .menu {
       display: flex;
       margin-top: 40px;
@@ -108,7 +115,6 @@ main {
           background-color: #fff;
           padding: 13px 15px;
 
-
           &__text {
             h3 {
               @include heighteen-px;
@@ -116,6 +122,7 @@ main {
             }
             p {
               @include fiveteen-px;
+              margin-top: 5px;
             }
           }
 
@@ -157,17 +164,17 @@ main {
       }
     }
   }
+  
   .search {
-
     &__btn {
       @include sixteen-px;
-    padding: 16px 48px;
-    border-radius: 25px;
-    border: none;
-    background: linear-gradient($second-color, $color-primary);
-    color: #fff;
-    margin-bottom: 40px;
-    margin-top: 8px;
+      padding: 16px 48px;
+      border-radius: 25px;
+      border: none;
+      background: linear-gradient($second-color, $color-primary);
+      color: #fff;
+      margin-bottom: 40px;
+      margin-top: 8px;
     }
   }
 }
