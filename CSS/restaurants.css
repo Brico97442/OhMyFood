@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -14,6 +18,7 @@
 
 /********Header********/
 header {
+  background-color: #fff;
   padding: 0 23px;
 }
 header .header__logo {
@@ -35,18 +40,69 @@ main .background__img {
   object-fit: cover;
 }
 main .slide {
+  padding: 0 13px;
   flex-direction: column;
+  background-color: #f2f2f2;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  position: relative;
+  top: -32px;
+}
+main .slide .menu {
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
+  flex-direction: column;
+}
+main .slide .menu h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+main .slide .menu hr {
+  background-color: #99e2d0;
+  height: 3px;
+  width: 40px;
+  border: none;
+  margin: 10px 0;
+}
+main .slide .menu__dishes {
+  gap: 12px;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+main .slide .menu__dishes__content {
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 13px 15px;
+}
+main .slide .menu__dishes__content__text h3 {
+  font-size: 18px;
+  font-weight: 400;
+  font-weight: 700;
+}
+main .slide .menu__dishes__content__text p {
+  font-size: 15px;
+}
+main .slide .menu__dishes__content__price {
+  display: flex;
+  align-items: flex-end;
+  font-size: 15px;
+  font-weight: bold;
 }
 main .slide__tittle {
   width: 100%;
   max-width: 307px;
   display: flex;
   justify-content: space-between;
+  margin-top: 32px;
 }
 main .slide__tittle button {
   display: flex;
   border: none;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 main .slide__tittle button .fa-solid:hover {
   color: transparent;
@@ -57,6 +113,17 @@ main .slide__tittle button .fa-solid:hover {
 main .slide__tittle__text h1 {
   font-family: "Shrikhand";
   font-size: 28px;
+}
+main .search__btn {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 48px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 8px;
 }
 
 footer {

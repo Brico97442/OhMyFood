@@ -15,6 +15,10 @@ $background-section-first-color: #f2f2f2;
   font-weight: 400;
 }
 
+@mixin fiveteen-px {
+  font-size: 15px;
+}
+
 @mixin flex-column {
   flex-direction: column;
 }
@@ -29,6 +33,9 @@ $background-section-first-color: #f2f2f2;
   padding: 0;
 }
 
+body {
+background-color:$background-section-first-color;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -38,6 +45,7 @@ $background-section-first-color: #f2f2f2;
 /********Header********/
 
 header {
+  background-color: #fff;
   padding: 0 23px;
   .header__logo {
     width: 100%;
@@ -53,29 +61,87 @@ header {
 main {
   display: flex;
   flex-direction: column;
+
+  
   .background__img {
     width: 100%;
     object-fit: cover;
   }
 
   .slide {
-    
+    padding: 0 13px;
     @include flex-column;
+    background-color: $background-section-first-color;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    top: -32px;
+    
+    .menu {
+      display: flex;
+      margin-top: 40px;
+      width: 100%;
+      @include flex-column;
+
+      h2 {
+        @include sixteen-px;
+      }
+
+      hr {
+        background-color: $third-color;
+        height: 3px;
+        width: 40px;
+        border: none;
+        margin: 10px 0;
+      }
+
+      &__dishes {
+        gap: 12px;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+
+        &__content {
+          @include radius15;
+          display: flex;
+          justify-content: space-between;
+          background-color: #fff;
+          padding: 13px 15px;
+
+
+          &__text {
+            h3 {
+              @include heighteen-px;
+              font-weight: 700;
+            }
+            p {
+              @include fiveteen-px;
+            }
+          }
+
+          &__price {
+            display: flex;
+            align-items: flex-end;
+            @include fiveteen-px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
 
     &__tittle {
       width: 100%;
       max-width: 307px;
       display: flex;
       justify-content: space-between;
+      margin-top: 32px;
 
       button {
-        
         display: flex;
         border: none;
-        background-color: #fff;
+        background-color: $background-section-first-color;
 
         .fa-solid:hover {
-          
           color: transparent;
           background-image: linear-gradient($color-primary, $second-color);
           background-clip: text;
@@ -84,12 +150,24 @@ main {
       }
 
       &__text {
-       
         h1 {
           font-family: "Shrikhand";
           font-size: 28px;
         }
       }
+    }
+  }
+  .search {
+
+    &__btn {
+      @include sixteen-px;
+    padding: 16px 48px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient($second-color, $color-primary);
+    color: #fff;
+    margin-bottom: 40px;
+    margin-top: 8px;
     }
   }
 }
