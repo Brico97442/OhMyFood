@@ -5,6 +5,8 @@ $second-color: #ff79da;
 $third-color: #99e2d0;
 $background-section-first-color: #f2f2f2;
 
+@import url(./mixins.scss);
+
 @mixin sixteen-px {
   font-size: 16px;
   font-weight: 400;
@@ -29,13 +31,12 @@ $background-section-first-color: #f2f2f2;
   padding: 0;
 }
 
-/********Header********/
-
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/********Header********/
 
 header {
   .header__logo {

@@ -1,18 +1,19 @@
 @charset "UTF-8";
 /********général********/
+@import url(./mixins.scss);
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/********Header********/
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/********Header********/
 header .header__logo {
   width: 162px;
   margin-bottom: 14px;
