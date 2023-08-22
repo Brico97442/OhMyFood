@@ -92,6 +92,7 @@ main {
 
       h2 {
         @include sixteen-px;
+        font-weight: lighter;
       }
 
       hr {
