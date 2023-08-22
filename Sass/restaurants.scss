@@ -198,16 +198,35 @@ footer {
     @include flex-column;
     gap: 7px;
 
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+    }
+
     p {
       font-weight: 400;
     }
 
     &__icons {
       display: flex;
+      align-items: center;
       gap: 11px;
+
+      .fa-utensils {
+        width: 12px;
+        height: 13px;
+      }
+
+      .fa-handshake-angle {
+        width: 12px;
+        height: 13px;
+      }
+      
       p {
         font-weight: 500;
       }
     }
   }
 }
+

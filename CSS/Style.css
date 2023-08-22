@@ -176,12 +176,26 @@ footer .footer__text {
   flex-direction: column;
   gap: 7px;
 }
+footer .footer__text a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
 footer .footer__text p {
   font-weight: 400;
 }
 footer .footer__text__icons {
   display: flex;
+  align-items: center;
   gap: 11px;
+}
+footer .footer__text__icons .fa-utensils {
+  width: 12px;
+  height: 13px;
+}
+footer .footer__text__icons .fa-handshake-angle {
+  width: 12px;
+  height: 13px;
 }
 footer .footer__text__icons p {
   font-weight: 500;
