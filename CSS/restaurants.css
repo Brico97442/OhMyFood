@@ -133,7 +133,6 @@ main .search__btn {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: none;
   padding: 25px;
   gap: 16px;
   color: #fff;
