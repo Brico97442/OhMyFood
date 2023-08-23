@@ -109,11 +109,21 @@ main .slide__tittle button {
   border: none;
   background-color: #f2f2f2;
 }
-main .slide__tittle button .fa-solid:hover {
-  color: transparent;
-  background-image: linear-gradient(#9356dc, #ff79da);
+main .slide__tittle button:hover .fa-solid {
+  z-index: 1;
+}
+main .slide__tittle button i {
+  position: absolute;
+  width: 20px;
+}
+main .slide__tittle button .fa-solid {
+  z-index: -1;
+}
+main .slide__tittle button .fa-solid::before {
   background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
 }
 main .slide__tittle__text h1 {
   font-family: "Shrikhand";

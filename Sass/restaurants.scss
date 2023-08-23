@@ -129,13 +129,28 @@ main {
         display: flex;
         border: none;
         background-color: $background-section-first-color;
-
-        .fa-solid:hover {
-          color: transparent;
-          background-image: linear-gradient($color-primary, $second-color);
-          background-clip: text;
-          -webkit-background-clip: text;
+        
+        &:hover {
+          .fa-solid {
+            z-index: 1;
+          }
         }
+        i {
+          position: absolute;
+          width: 20px;
+        }
+        
+        .fa-solid {
+          z-index: -1;
+          
+          &::before {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient($color-primary, $second-color);
+          }
+        }
+        
       }
 
       &__text {
