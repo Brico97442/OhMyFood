@@ -134,11 +134,11 @@ header {
     display: flex;
     @include mixins.flex-column;
     gap: 18px;
-    
+
     .new {
       position: relative;
-      
-      &::before{
+
+      &::before {
         display: grid;
         place-items: center;
         position: absolute;
@@ -149,8 +149,8 @@ header {
         height: 29px;
         background-color: $third-color;
         border-radius: 3px;
-        color: darken( $third-color, $amount: 50%);
-        font-size: 14px; 
+        color: darken($third-color, $amount: 50%);
+        font-size: 14px;
       }
     }
   }
@@ -188,15 +188,31 @@ header {
     }
 
     button {
+      margin-right: 12px;
       display: flex;
       border: none;
       background-color: #fff;
+      position: relative;
 
-      .fa-solid:hover {
-        color: transparent;
-        background-image: linear-gradient($color-primary, $second-color);
-        background-clip: text;
-        -webkit-background-clip: text;
+      &:hover {
+        .fa-solid {
+          z-index: 1;
+        }
+      }
+      i {
+        position: absolute;
+        width: 20px;
+      }
+      
+      .fa-solid {
+        z-index: -1;
+        
+        &::before {
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          background-image: linear-gradient($color-primary, $second-color);
+        }
       }
     }
   }

@@ -169,15 +169,27 @@ header .header__logo {
   font-weight: lighter;
 }
 .restaurant__card__content button {
+  margin-right: 12px;
   display: flex;
   border: none;
   background-color: #fff;
+  position: relative;
 }
-.restaurant__card__content button .fa-solid:hover {
-  color: transparent;
-  background-image: linear-gradient(#9356dc, #ff79da);
+.restaurant__card__content button:hover .fa-solid {
+  z-index: 1;
+}
+.restaurant__card__content button i {
+  position: absolute;
+  width: 20px;
+}
+.restaurant__card__content button .fa-solid {
+  z-index: -1;
+}
+.restaurant__card__content button .fa-solid::before {
   background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
 }
 
 footer {
