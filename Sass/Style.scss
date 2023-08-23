@@ -149,7 +149,8 @@ header {
         height: 29px;
         background-color: $third-color;
         border-radius: 3px;
-        color: darken( $third-color, $amount: 50%) 
+        color: darken( $third-color, $amount: 50%);
+        font-size: 14px; 
       }
     }
   }
