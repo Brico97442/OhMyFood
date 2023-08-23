@@ -32,7 +32,6 @@ header .header__logo {
 .location__info h2 {
   color: #353535;
   font-size: 16px;
-  font-weight: 400;
 }
 
 .explorer {
@@ -44,7 +43,6 @@ header .header__logo {
 .explorer__btn {
   width: 218px;
   font-size: 16px;
-  font-weight: 400;
   padding: 13px 19px;
   border-radius: 25px;
   border: none;
@@ -90,7 +88,6 @@ header .header__logo {
   width: 100%;
   max-width: 335px;
   font-size: 16px;
-  font-weight: 400;
   padding: 27px 0px 27px 34px;
   border-radius: 20px;
   border: none;
@@ -125,6 +122,22 @@ header .header__logo {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+.restaurant__card__wrap .new {
+  position: relative;
+}
+.restaurant__card__wrap .new::before {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  content: "Nouveau";
+  width: 80px;
+  height: 29px;
+  background-color: #99e2d0;
+  border-radius: 3px;
+  color: #1b6150;
 }
 .restaurant__card {
   border-radius: 15px;

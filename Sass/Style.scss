@@ -134,6 +134,24 @@ header {
     display: flex;
     @include mixins.flex-column;
     gap: 18px;
+    
+    .new {
+      position: relative;
+      
+      &::before{
+        display: grid;
+        place-items: center;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        content: "Nouveau";
+        width: 80px;
+        height: 29px;
+        background-color: $third-color;
+        border-radius: 3px;
+        color: darken( $third-color, $amount: 50%) 
+      }
+    }
   }
 
   &__card {
@@ -192,7 +210,6 @@ footer {
   background-color: #353535;
 
   .footer__tittle {
-    
     h3 {
       font-family: "Shrikhand";
       @include mixins.heighteen-px;
