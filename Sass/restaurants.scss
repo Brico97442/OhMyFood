@@ -1,3 +1,5 @@
+@use "./mixins";
+
 /********général********/
 
 $color-primary: #9356dc;
@@ -5,27 +7,6 @@ $second-color: #ff79da;
 $third-color: #99e2d0;
 $background-section-first-color: #f2f2f2;
 
-@mixin sixteen-px {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-@mixin heighteen-px {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-@mixin fiveteen-px {
-  font-size: 15px;
-}
-
-@mixin flex-column {
-  flex-direction: column;
-}
-
-@mixin radius15 {
-  border-radius: 15px;
-}
 
 * {
   font-family: "Roboto", sans-serif;
@@ -88,10 +69,10 @@ main {
       display: flex;
       margin-top: 40px;
       width: 100%;
-      @include flex-column;
+      @include mixins.flex-column;
 
       h2 {
-        @include sixteen-px;
+        @include mixins.sixteen-px;
         font-weight: lighter;
       }
 
@@ -110,7 +91,7 @@ main {
         flex-direction: column;
 
         &__content {
-          @include radius15;
+          @include mixins.radius15;
           display: flex;
           justify-content: space-between;
           background-color: #fff;
@@ -118,11 +99,11 @@ main {
 
           &__text {
             h3 {
-              @include heighteen-px;
+              @include mixins.heighteen-px;
               font-weight: 700;
             }
             p {
-              @include fiveteen-px;
+              @include mixins.fiveteen-px;
               margin-top: 5px;
             }
           }
@@ -130,7 +111,7 @@ main {
           &__price {
             display: flex;
             align-items: flex-end;
-            @include fiveteen-px;
+            @include mixins.fiveteen-px;
             font-weight: bold;
           }
         }
@@ -168,7 +149,7 @@ main {
   
   .search {
     &__btn {
-      @include sixteen-px;
+      @include mixins.sixteen-px;
       padding: 16px 48px;
       border-radius: 25px;
       border: none;
@@ -181,7 +162,7 @@ main {
 
 footer {
   display: flex;
-  @include flex-column;
+  @include mixins.flex-column;
   padding: 25px;
   gap: 16px;
   color: #fff;
@@ -190,12 +171,12 @@ footer {
   .footer__tittle {
     h3 {
       font-family: "Shrikhand";
-      @include heighteen-px;
+      @include mixins.heighteen-px;
     }
   }
   .footer__text {
     display: flex;
-    @include flex-column;
+    @include mixins.flex-column;
     gap: 7px;
 
     a {

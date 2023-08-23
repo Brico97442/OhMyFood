@@ -1,29 +1,12 @@
-/********général********/
+@use "./mixins";
+@use "./utils/box-shadow";
 
 $color-primary: #9356dc;
 $second-color: #ff79da;
 $third-color: #99e2d0;
 $background-section-first-color: #f2f2f2;
 
-@import url(./mixins.scss);
-
-@mixin sixteen-px {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-@mixin heighteen-px {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-@mixin flex-column {
-  flex-direction: column;
-}
-
-@mixin radius15 {
-  border-radius: 15px;
-}
+/********général********/
 
 * {
   font-family: "Roboto", sans-serif;
@@ -39,6 +22,7 @@ $background-section-first-color: #f2f2f2;
 /********Header********/
 
 header {
+  @include box-shadow.base-shadow;
   .header__logo {
     width: 162px;
     margin-bottom: 14px;
@@ -53,7 +37,7 @@ header {
     margin: 15px 0;
     h2 {
       color: #353535;
-      @include sixteen-px;
+      @include mixins.sixteen-px;
     }
   }
 }
@@ -65,7 +49,7 @@ header {
   padding: 0 30px;
 
   &__btn {
-    @include sixteen-px;
+    @include mixins.sixteen-px;
     padding: 13px 19px;
     border-radius: 25px;
     border: none;
@@ -90,7 +74,7 @@ header {
 .fonctionnement {
   padding: 0 20px;
   margin-top: 48px;
-  @include flex-column;
+  @include mixins.flex-column;
   padding-bottom: 68px;
 
   &__tittle {
@@ -113,12 +97,12 @@ header {
     position: relative;
     width: 100%;
     max-width: 335px;
-    @include sixteen-px;
+    @include mixins.sixteen-px;
     padding: 27px 0px 27px 34px;
     border-radius: 20px;
     border: none;
     background-color: #f6f6f6;
-
+    @include box-shadow.base-shadow;
     .fa-solid {
       color: #353535;
     }
@@ -137,7 +121,7 @@ header {
 
 .restaurant {
   display: flex;
-  @include flex-column;
+  @include mixins.flex-column;
   padding: 0 20px;
   background-color: #f2f2f2;
   padding-bottom: 65px;
@@ -146,12 +130,12 @@ header {
   &__card__wrap {
     margin-top: 20px;
     display: flex;
-    @include flex-column;
+    @include mixins.flex-column;
     gap: 18px;
   }
 
   &__card {
-    @include radius15;
+    @include mixins.radius15;
     background-color: #fff;
     a {
       text-decoration: none;
@@ -199,21 +183,22 @@ header {
 
 footer {
   display: flex;
-  @include flex-column;
+  @include mixins.flex-column;
   padding: 25px;
   gap: 16px;
   color: #fff;
   background-color: #353535;
 
   .footer__tittle {
+    
     h3 {
       font-family: "Shrikhand";
-      @include heighteen-px;
+      @include mixins.heighteen-px;
     }
   }
   .footer__text {
     display: flex;
-    @include flex-column;
+    @include mixins.flex-column;
     gap: 7px;
 
     a {

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /********général********/
-@import url(./mixins.scss);
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -14,6 +13,9 @@
 }
 
 /********Header********/
+header {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
 header .header__logo {
   width: 162px;
   margin-bottom: 14px;
@@ -63,6 +65,7 @@ header .header__logo {
 .fonctionnement {
   padding: 0 20px;
   margin-top: 48px;
+  display: flex;
   flex-direction: column;
   padding-bottom: 68px;
 }
@@ -90,6 +93,7 @@ header .header__logo {
   border-radius: 20px;
   border: none;
   background-color: #f6f6f6;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .fonctionnement__btn .fa-solid {
   color: #353535;
@@ -106,6 +110,7 @@ header .header__logo {
 
 .restaurant {
   display: flex;
+  display: flex;
   flex-direction: column;
   padding: 0 20px;
   background-color: #f2f2f2;
@@ -114,6 +119,7 @@ header .header__logo {
 }
 .restaurant__card__wrap {
   margin-top: 20px;
+  display: flex;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -160,6 +166,7 @@ header .header__logo {
 
 footer {
   display: flex;
+  display: flex;
   flex-direction: column;
   padding: 25px;
   gap: 16px;
@@ -172,6 +179,7 @@ footer .footer__tittle h3 {
   font-weight: 400;
 }
 footer .footer__text {
+  display: flex;
   display: flex;
   flex-direction: column;
   gap: 7px;

@@ -55,6 +55,7 @@ main .slide .menu {
   display: flex;
   margin-top: 40px;
   width: 100%;
+  display: flex;
   flex-direction: column;
 }
 main .slide .menu h2 {
@@ -132,6 +133,7 @@ main .search__btn {
 
 footer {
   display: flex;
+  display: flex;
   flex-direction: column;
   padding: 25px;
   gap: 16px;
@@ -144,6 +146,7 @@ footer .footer__tittle h3 {
   font-weight: 400;
 }
 footer .footer__text {
+  display: flex;
   display: flex;
   flex-direction: column;
   gap: 7px;
