@@ -69,6 +69,11 @@ header .header__logo {
   flex-direction: column;
   padding-bottom: 68px;
 }
+@media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 0 180px;
+  }
+}
 .fonctionnement__tittle {
   text-align: start;
   width: 100%;
@@ -80,19 +85,29 @@ header .header__logo {
   width: 100%;
   justify-content: start;
 }
+@media (min-width: 1024px) {
+  .fonctionnement__wrap {
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+  }
+}
 .fonctionnement__btn {
   display: flex;
   justify-content: left;
   gap: 17px;
   position: relative;
   width: 100%;
-  max-width: 335px;
   font-size: 16px;
   padding: 27px 0px 27px 34px;
   border-radius: 20px;
   border: none;
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 1024px) {
+  .fonctionnement__btn {
+    max-width: 335px;
+  }
 }
 .fonctionnement__btn .fa-solid {
   color: #353535;
@@ -115,6 +130,15 @@ header .header__logo {
   background-color: #f2f2f2;
   padding-bottom: 65px;
   padding-top: 50px;
+}
+@media (min-width: 1024px) {
+  .restaurant {
+    padding: 0 180px;
+    max-width: 1080px;
+  }
+  .restaurant .restaurant__tittle {
+    margin-top: 30px;
+  }
 }
 .restaurant__card__wrap {
   margin-top: 20px;

@@ -78,6 +78,9 @@ header {
   margin-top: 48px;
   @include mixins.flex-column;
   padding-bottom: 68px;
+  @media(min-width:1024px) {
+    padding: 0 180px ;
+  }
 
   &__tittle {
     text-align: start;
@@ -90,6 +93,10 @@ header {
     margin-top: 26px;
     width: 100%;
     justify-content: start;
+    @media(min-width:1024px) {
+      flex-wrap: nowrap;
+      margin-bottom: 50px;
+    }
   }
 
   &__btn {
@@ -98,13 +105,15 @@ header {
     gap: 17px;
     position: relative;
     width: 100%;
-    max-width: 335px;
     @include mixins.sixteen-px;
     padding: 27px 0px 27px 34px;
     border-radius: 20px;
     border: none;
     background-color: #f6f6f6;
     @include box-shadow.btn-shadow;
+    @media(min-width:1024px) {
+      max-width: 335px;
+    }
     .fa-solid {
       color: #353535;
     }
@@ -128,6 +137,13 @@ header {
   background-color: #f2f2f2;
   padding-bottom: 65px;
   padding-top: 50px;
+  @media(min-width:1024px) {
+    padding: 0 180px ;
+    max-width: 1080px;
+    .restaurant__tittle {
+      margin-top: 30px;
+    }
+  }
 
   &__card__wrap {
     margin-top: 20px;
