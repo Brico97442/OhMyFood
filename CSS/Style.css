@@ -21,6 +21,13 @@ header .header__logo {
   margin-bottom: 14px;
   margin-top: 14px;
 }
+@media (min-width: 1024px) {
+  header .header__logo {
+    width: 200px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
 
 @media (min-width: 1024px) {
   main {
