@@ -119,7 +119,15 @@ main .slide .menu__dishes__content {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+}
+main .slide .menu__dishes__content:hover .checkbox {
+  display: flex;
+}
+main .slide .menu__dishes__content__text {
   padding: 13px 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 main .slide .menu__dishes__content__text h3 {
   font-size: 18px;
@@ -129,12 +137,30 @@ main .slide .menu__dishes__content__text h3 {
 main .slide .menu__dishes__content__text p {
   font-size: 15px;
   margin-top: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 main .slide .menu__dishes__content__price {
   display: flex;
   align-items: flex-end;
   font-size: 15px;
   font-weight: bold;
+}
+main .slide .menu__dishes__content__price p {
+  padding: 15px;
+}
+main .slide .menu__dishes__content .checkbox {
+  display: none;
+  background-color: #99e2d0;
+  width: 59px;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+main .slide .menu__dishes__content .checkbox .fa-solid {
+  color: #fff;
+  font-size: 20px;
 }
 main .slide__tittle {
   width: 100%;
