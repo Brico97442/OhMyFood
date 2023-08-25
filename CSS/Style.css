@@ -75,10 +75,15 @@ header .header__logo {
   max-width: 275px;
   margin-top: 43px;
 }
+@media (min-width: 1024px) {
+  .explorer h1 {
+    max-width: 1080px;
+    font-size: 40px;
+  }
+}
 .explorer p {
-  font-size: 17px;
-  font-weight: lighter;
-  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .fonctionnement {
