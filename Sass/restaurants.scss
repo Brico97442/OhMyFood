@@ -1,4 +1,5 @@
 @use "./mixins";
+@use "./utils/box-shadow";
 
 /********général********/
 
@@ -30,7 +31,7 @@ body {
 /********Header********/
 
 header {
-
+  @include box-shadow.header-shadow;
   background-color: #fff;
   padding: 0 23px;
   

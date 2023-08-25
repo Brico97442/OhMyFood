@@ -27,7 +27,7 @@ header {
     width: 162px;
     margin-bottom: 14px;
     margin-top: 14px;
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
       width: 200px;
       margin-bottom: 30px;
       margin-top: 30px;
@@ -61,7 +61,7 @@ main {
   text-align: center;
   background-color: $background-section-first-color;
   padding: 0 30px;
-  
+
   @media (min-width: 1024px) {
     @include mixins.fullwidth;
     padding: 0;
@@ -98,7 +98,7 @@ main {
   margin-top: 48px;
   @include mixins.flex-column;
   padding-bottom: 68px;
-  
+
   @media (min-width: 1024px) {
     padding: 0;
     max-width: 1080px;
@@ -124,6 +124,7 @@ main {
 
   &__btn {
     display: flex;
+    height: 73px;
     justify-content: left;
     gap: 17px;
     position: relative;
@@ -179,12 +180,12 @@ main {
     @include mixins.flex-column;
     gap: 18px;
     @media (min-width: 1024px) {
-      max-width: 1080px;
       width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1080px;
       margin-bottom: 30px;
-      gap: 50px 100px;
     }
     .new {
       position: relative;
@@ -211,6 +212,7 @@ main {
     background-color: #fff;
     @media (min-width: 1024px) {
       max-width: 490px;
+      width: 100%;
     }
     a {
       text-decoration: none;
