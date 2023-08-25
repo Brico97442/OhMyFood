@@ -30,8 +30,17 @@ header {
   }
 }
 
+main {
+  @media (min-width: 1024px) {
+    @include mixins.flex-column;
+    align-items: center;
+  }
+}
 .location {
   background-color: #eaeaea;
+  @media (min-width: 1024px) {
+    @include mixins.fullwidth;
+  }
   &__info {
     gap: 17px;
     margin: 15px 0;
@@ -47,7 +56,10 @@ header {
   text-align: center;
   background-color: $background-section-first-color;
   padding: 0 30px;
-
+  @media (min-width: 1024px) {
+    @include mixins.fullwidth;
+    padding: 0;
+  }
   &__btn {
     width: 218px;
     @include mixins.sixteen-px;
@@ -79,9 +91,9 @@ header {
   @include mixins.flex-column;
   padding-bottom: 68px;
   @media (min-width: 1024px) {
-    padding: 0 180px;
+    padding: 0;
     max-width: 1080px;
-    justify-content: center;
+    width: 100%;
   }
 
   &__tittle {
@@ -143,7 +155,8 @@ header {
 
   @media (min-width: 1024px) {
     align-items: center;
-    padding: 0 180px;
+    padding: 0;
+    @include mixins.fullwidth;
     .restaurant__tittle {
       width: 100%;
       max-width: 1080px;
@@ -258,7 +271,7 @@ footer {
   gap: 16px;
   color: #fff;
   background-color: #353535;
-  @media(min-width:1024px){
+  @media (min-width: 1024px) {
     flex-direction: row-reverse;
     justify-content: end;
   }
@@ -274,7 +287,7 @@ footer {
     display: flex;
     @include mixins.flex-column;
     gap: 7px;
-    @media(min-width:1024px){
+    @media (min-width: 1024px) {
       flex-direction: row;
       align-items: center;
     }

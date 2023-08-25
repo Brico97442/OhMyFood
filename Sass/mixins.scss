@@ -20,3 +20,7 @@
 @mixin radius15 {
   border-radius: 15px;
 }
+
+@mixin fullwidth {
+  width: 100%;
+}

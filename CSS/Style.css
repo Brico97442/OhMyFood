@@ -22,8 +22,21 @@ header .header__logo {
   margin-top: 14px;
 }
 
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .location {
   background-color: #eaeaea;
+}
+@media (min-width: 1024px) {
+  .location {
+    width: 100%;
+  }
 }
 .location__info {
   gap: 17px;
@@ -39,6 +52,12 @@ header .header__logo {
   text-align: center;
   background-color: #f2f2f2;
   padding: 0 30px;
+}
+@media (min-width: 1024px) {
+  .explorer {
+    width: 100%;
+    padding: 0;
+  }
 }
 .explorer__btn {
   width: 218px;
@@ -71,9 +90,9 @@ header .header__logo {
 }
 @media (min-width: 1024px) {
   .fonctionnement {
-    padding: 0 180px;
+    padding: 0;
     max-width: 1080px;
-    justify-content: center;
+    width: 100%;
   }
 }
 .fonctionnement__tittle {
@@ -136,7 +155,8 @@ header .header__logo {
 @media (min-width: 1024px) {
   .restaurant {
     align-items: center;
-    padding: 0 180px;
+    padding: 0;
+    width: 100%;
   }
   .restaurant .restaurant__tittle {
     width: 100%;
