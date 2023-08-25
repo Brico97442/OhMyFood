@@ -78,8 +78,10 @@ header {
   margin-top: 48px;
   @include mixins.flex-column;
   padding-bottom: 68px;
-  @media(min-width:1024px) {
-    padding: 0 180px ;
+  @media (min-width: 1024px) {
+    padding: 0 180px;
+    max-width: 1080px;
+    justify-content: center;
   }
 
   &__tittle {
@@ -93,7 +95,7 @@ header {
     margin-top: 26px;
     width: 100%;
     justify-content: start;
-    @media(min-width:1024px) {
+    @media (min-width: 1024px) {
       flex-wrap: nowrap;
       margin-bottom: 50px;
     }
@@ -111,7 +113,8 @@ header {
     border: none;
     background-color: #f6f6f6;
     @include box-shadow.btn-shadow;
-    @media(min-width:1024px) {
+
+    @media (min-width: 1024px) {
       max-width: 335px;
     }
     .fa-solid {
@@ -137,10 +140,13 @@ header {
   background-color: #f2f2f2;
   padding-bottom: 65px;
   padding-top: 50px;
-  @media(min-width:1024px) {
-    padding: 0 180px ;
-    max-width: 1080px;
+
+  @media (min-width: 1024px) {
+    align-items: center;
+    padding: 0 180px;
     .restaurant__tittle {
+      width: 100%;
+      max-width: 1080px;
       margin-top: 30px;
     }
   }
@@ -150,7 +156,14 @@ header {
     display: flex;
     @include mixins.flex-column;
     gap: 18px;
-
+    @media (min-width: 1024px) {
+      max-width: 1080px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 30px;
+      gap: 50px 100px;
+    }
     .new {
       position: relative;
 
@@ -174,6 +187,9 @@ header {
   &__card {
     @include mixins.radius15;
     background-color: #fff;
+    @media (min-width: 1024px) {
+      max-width: 490px;
+    }
     a {
       text-decoration: none;
       color: #000;
@@ -215,13 +231,15 @@ header {
           z-index: 1;
         }
       }
+
       i {
         position: absolute;
         width: 20px;
       }
+
       .fa-solid {
         z-index: -1;
-        
+
         &::before {
           background-clip: text;
           -webkit-background-clip: text;
@@ -240,6 +258,10 @@ footer {
   gap: 16px;
   color: #fff;
   background-color: #353535;
+  @media(min-width:1024px){
+    flex-direction: row-reverse;
+    justify-content: end;
+  }
 
   .footer__tittle {
     h3 {
@@ -247,11 +269,15 @@ footer {
       @include mixins.heighteen-px;
     }
   }
+
   .footer__text {
     display: flex;
     @include mixins.flex-column;
     gap: 7px;
-
+    @media(min-width:1024px){
+      flex-direction: row;
+      align-items: center;
+    }
     a {
       text-decoration: none;
       color: #fff;

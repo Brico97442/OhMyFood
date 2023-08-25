@@ -72,6 +72,8 @@ header .header__logo {
 @media (min-width: 1024px) {
   .fonctionnement {
     padding: 0 180px;
+    max-width: 1080px;
+    justify-content: center;
   }
 }
 .fonctionnement__tittle {
@@ -133,10 +135,12 @@ header .header__logo {
 }
 @media (min-width: 1024px) {
   .restaurant {
+    align-items: center;
     padding: 0 180px;
-    max-width: 1080px;
   }
   .restaurant .restaurant__tittle {
+    width: 100%;
+    max-width: 1080px;
     margin-top: 30px;
   }
 }
@@ -146,6 +150,16 @@ header .header__logo {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+@media (min-width: 1024px) {
+  .restaurant__card__wrap {
+    max-width: 1080px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+    gap: 50px 100px;
+  }
 }
 .restaurant__card__wrap .new {
   position: relative;
@@ -167,6 +181,11 @@ header .header__logo {
 .restaurant__card {
   border-radius: 15px;
   background-color: #fff;
+}
+@media (min-width: 1024px) {
+  .restaurant__card {
+    max-width: 490px;
+  }
 }
 .restaurant__card a {
   text-decoration: none;
@@ -225,6 +244,12 @@ footer {
   color: #fff;
   background-color: #353535;
 }
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    justify-content: end;
+  }
+}
 footer .footer__tittle h3 {
   font-family: "Shrikhand";
   font-size: 18px;
@@ -235,6 +260,12 @@ footer .footer__text {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media (min-width: 1024px) {
+  footer .footer__text {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 footer .footer__text a {
   text-decoration: none;
