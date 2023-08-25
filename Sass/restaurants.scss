@@ -45,6 +45,10 @@ header {
         width: 162px;
         margin-bottom: 14px;
         margin-top: 14px;
+        @media (min-width: 1024px){
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
       }
     }
   }
