@@ -9,6 +9,11 @@
 body {
   background-color: #f2f2f2;
 }
+@media (min-width: 1024px) {
+  body {
+    background-color: #fff;
+  }
+}
 
 .center {
   display: flex;
@@ -38,6 +43,11 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1024px) {
+  main {
+    align-items: center;
+  }
+}
 main .background__img {
   height: 275px;
   width: 100%;
@@ -51,12 +61,27 @@ main .slide {
   position: relative;
   bottom: 55px;
 }
+@media (min-width: 1024px) {
+  main .slide {
+    padding: 0;
+    width: 100%;
+    max-width: 1055px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 main .slide .menu {
   display: flex;
   margin-top: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  main .slide .menu {
+    max-width: 634px;
+  }
 }
 main .slide .menu h2 {
   font-size: 16px;
@@ -138,6 +163,11 @@ main .search__btn {
   color: #fff;
   margin-top: 40px;
 }
+@media (min-width: 1024px) {
+  main .search__btn {
+    margin-bottom: 40px;
+  }
+}
 
 footer {
   display: flex;
@@ -147,6 +177,12 @@ footer {
   gap: 16px;
   color: #fff;
   background-color: #353535;
+}
+@media (min-width: 1024px) {
+  footer {
+    margin-top: -55px;
+    flex-direction: row-reverse;
+  }
 }
 footer .footer__tittle h3 {
   font-family: "Shrikhand";
@@ -158,6 +194,12 @@ footer .footer__text {
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media (min-width: 1024px) {
+  footer .footer__text {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 footer .footer__text a {
   text-decoration: none;

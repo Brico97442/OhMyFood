@@ -16,6 +16,9 @@ $background-section-first-color: #f2f2f2;
 
 body {
   background-color: $background-section-first-color;
+  @media (min-width: 1024px){
+    background-color: #fff;
+  }
 }
 
 .center {
@@ -50,7 +53,9 @@ header {
 main {
   display: flex;
   flex-direction: column;
-
+  @media (min-width: 1024px){
+    align-items: center;
+  }
   .background__img {
     height: 275px;
     width: 100%;
@@ -64,12 +69,21 @@ main {
     border-top-right-radius: 25px;
     position: relative;
     bottom: 55px;
-
+    @media (min-width: 1024px){
+      padding: 0;
+      width: 100%;
+      max-width: 1055px;
+      @include mixins.flex-column;
+      align-items: center;
+    }
     .menu {
       display: flex;
       margin-top: 40px;
       width: 100%;
       @include mixins.flex-column;
+      @media (min-width: 1024px){
+        max-width: 634px; 
+      }
 
       h2 {
         @include mixins.sixteen-px;
@@ -171,6 +185,10 @@ main {
       background: linear-gradient($second-color, $color-primary);
       color: #fff;
       margin-top: 40px;
+      
+      @media (min-width: 1024px){
+        margin-bottom: 40px;
+      }
     }
   }
 }
@@ -182,7 +200,10 @@ footer {
   gap: 16px;
   color: #fff;
   background-color: #353535;
-
+  @media (min-width: 1024px){
+    margin-top: -55px;
+    flex-direction: row-reverse;
+  }
   .footer__tittle {
     h3 {
       font-family: "Shrikhand";
@@ -193,6 +214,10 @@ footer {
     display: flex;
     @include mixins.flex-column;
     gap: 7px;
+    @media (min-width: 1024px){
+      flex-direction: row;
+      align-items: center;
+    }
 
     a {
       text-decoration: none;
