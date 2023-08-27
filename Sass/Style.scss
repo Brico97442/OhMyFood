@@ -282,26 +282,26 @@ footer {
   gap: 16px;
   color: #fff;
   background-color: #353535;
-  @media (min-width: 1024px) {
+  @media (min-width: 1024px){
     flex-direction: row-reverse;
-    justify-content: end;
+    padding: 65px 30px 30px 30px;
   }
-
   .footer__tittle {
     h3 {
       font-family: "Shrikhand";
       @include mixins.heighteen-px;
     }
   }
-
   .footer__text {
     display: flex;
     @include mixins.flex-column;
     gap: 7px;
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px){
       flex-direction: row;
       align-items: center;
+      
     }
+
     a {
       text-decoration: none;
       color: #fff;
@@ -326,7 +326,7 @@ footer {
         width: 12px;
         height: 13px;
       }
-
+      
       p {
         font-weight: 500;
       }

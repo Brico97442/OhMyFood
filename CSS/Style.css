@@ -281,7 +281,7 @@ footer {
 @media (min-width: 1024px) {
   footer {
     flex-direction: row-reverse;
-    justify-content: end;
+    padding: 65px 30px 30px 30px;
   }
 }
 footer .footer__tittle h3 {
