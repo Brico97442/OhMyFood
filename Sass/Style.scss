@@ -5,6 +5,9 @@ $color-primary: #9356dc;
 $second-color: #ff79da;
 $third-color: #99e2d0;
 $background-section-first-color: #f2f2f2;
+$gradiant: linear-gradient(#9356dc, #ff79da);
+$colorgrandiant-primary: lighten(#9356dc, 10%);
+$colorgrandiant-secondary: lighten(#ff79da, 10%);
 
 /********général********/
 
@@ -20,24 +23,63 @@ $background-section-first-color: #f2f2f2;
   align-items: center;
 }
 
-.loader{
-  background-color: #9356dc;
+.loader {
+  background: $colorgrandiant-primary;
   height: 100vh;
   position: fixed;
   inset: 0;
   z-index: 1;
-  opacity: 0.5;
-  animation: disappear 2s;
+  opacity: 0.8;
+  animation: disappear 1s ease 4s forwards;
+  &__circle {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 7px solid transparent;
+    border-top-color: $third-color;
+    animation: spin 2s linear infinite;
 
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      border: 7px solid transparent;
+    }
+    &::before {
+      inset: 10px;
+      border-top-color: $color-primary;
+      animation: spin 4s linear infinite;
+    }
+    &::after {
+      inset: 25px;
+      border-top-color: $second-color;
+      animation: spin 2s linear infinite;
+    }
+  }
 }
-@keyframes disappear {
-  0%{
-    transform: scale(1);
-  }
 
-  100%{
-    transform: scale(0)
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes disappear {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(-200vh);
+	}
 }
 /********Header********/
 
@@ -302,7 +344,7 @@ footer {
   gap: 16px;
   color: #fff;
   background-color: #353535;
-  @media (min-width: 1024px){
+  @media (min-width: 1024px) {
     flex-direction: row-reverse;
     padding: 65px 30px 30px 30px;
   }
@@ -316,10 +358,9 @@ footer {
     display: flex;
     @include mixins.flex-column;
     gap: 7px;
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
       flex-direction: row;
       align-items: center;
-      
     }
 
     a {
@@ -346,7 +387,7 @@ footer {
         width: 12px;
         height: 13px;
       }
-      
+
       p {
         font-weight: 500;
       }
