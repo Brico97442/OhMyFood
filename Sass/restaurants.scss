@@ -7,7 +7,7 @@ $color-primary: #9356dc;
 $second-color: #ff79da;
 $third-color: #99e2d0;
 $background-section-first-color: #f2f2f2;
-$gradiant: linear-gradient(#9356dc ,#ff79da);
+$gradiant: linear-gradient(#9356dc, #ff79da);
 $colorgrandiant-primary: lighten(#9356dc, 10%);
 $colorgrandiant-secondary: lighten(#ff79da, 10%);
 
@@ -95,6 +95,20 @@ main {
       display: flex;
       margin-top: 40px;
       width: 100%;
+      
+      .slide-card {
+        animation: slide-dishes 1s ease normal forwards;
+      }
+
+      .delay__1 {
+        animation-delay:0.4s ;
+      }
+      .delay__2 {
+        animation-delay:0.8s ;
+      }
+      .delay__3 {
+        animation-delay:1.2s ;
+      }
       @include mixins.flex-column;
       @media (min-width: 1024px) {
         max-width: 634px;
@@ -117,7 +131,19 @@ main {
         gap: 12px;
         display: flex;
         list-style: none;
-        flex-direction: column;
+        flex-direction: column;        
+        @keyframes slide-dishes {
+          0% {
+            opacity: 0;
+            transform: translateX(20rem);
+          }
+        
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
 
         &__content {
           @include mixins.radius15;
@@ -198,8 +224,8 @@ main {
 
         &:hover {
           .fa-solid {
-           opacity: 1;
-           transition-duration: 0.5s;
+            opacity: 1;
+            transition-duration: 0.5s;
           }
           .fa-regular {
             opacity: 0;
@@ -242,9 +268,12 @@ main {
       margin-top: 40px;
       @include box-shadow.btn-gradiant-shadow;
       transition-duration: 0.5s;
-      &:hover{
+      &:hover {
         @include box-shadow.btn-gradiant-shadow-hover;
-        background: linear-gradient($colorgrandiant-primary,$colorgrandiant-secondary);
+        background: linear-gradient(
+          $colorgrandiant-primary,
+          $colorgrandiant-secondary
+        );
         transition-duration: 0.5s;
       }
       @media (min-width: 1024px) {
@@ -270,7 +299,7 @@ footer {
       font-family: "Shrikhand";
       @include mixins.heighteen-px;
     }
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
       margin-top: 50px;
     }
   }
