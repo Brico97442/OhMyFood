@@ -19,7 +19,7 @@
   inset: 0;
   z-index: 1;
   opacity: 0.8;
-  animation: disappear 1s ease 4s forwards;
+  animation: disappear 1s ease 3s forwards;
 }
 .loader__circle {
   display: block;
@@ -126,11 +126,17 @@ header .header__logo {
   padding: 13px 19px;
   border-radius: 25px;
   border: none;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#9356dc, #ff79da);
   color: #fff;
   margin-bottom: 57px;
   margin-top: 27px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition-duration: 1s;
+}
+.explorer__btn:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#ae80e5, #fface8);
+  transition-duration: 1s;
 }
 .explorer h1 {
   max-width: 275px;
@@ -299,22 +305,28 @@ header .header__logo {
   font-size: 17px;
   font-weight: lighter;
 }
+.restaurant__card__content .heart {
+  margin-right: 15px;
+}
 .restaurant__card__content button {
-  margin-right: 12px;
   display: flex;
   border: none;
-  background-color: #fff;
-  position: relative;
+  background-color: #f2f2f2;
 }
 .restaurant__card__content button:hover .fa-solid {
-  z-index: 1;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.restaurant__card__content button:hover .fa-regular {
+  opacity: 0;
 }
 .restaurant__card__content button i {
   position: absolute;
   width: 20px;
 }
 .restaurant__card__content button .fa-solid {
-  z-index: -1;
+  opacity: 0;
+  transition-duration: 0.5s;
 }
 .restaurant__card__content button .fa-solid::before {
   background-clip: text;

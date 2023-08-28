@@ -91,6 +91,7 @@ main {
       @include mixins.flex-column;
       align-items: center;
     }
+    
     .menu {
       display: flex;
       margin-top: 40px;
