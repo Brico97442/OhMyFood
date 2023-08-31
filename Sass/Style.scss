@@ -195,7 +195,6 @@ main {
 
   &__btn {
     display: flex;
-    height: 73px;
     justify-content: left;
     gap: 17px;
     position: relative;
@@ -316,7 +315,7 @@ main {
     .heart{
       margin-right: 15px;
     }
-    button {
+    .heart {
       display: flex;
       border: none;
       background-color: $background-section-first-color;

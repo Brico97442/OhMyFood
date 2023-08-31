@@ -186,7 +186,6 @@ header .header__logo {
 }
 .fonctionnement__btn {
   display: flex;
-  height: 73px;
   justify-content: left;
   gap: 17px;
   position: relative;
@@ -308,27 +307,27 @@ header .header__logo {
 .restaurant__card__content .heart {
   margin-right: 15px;
 }
-.restaurant__card__content button {
+.restaurant__card__content .heart {
   display: flex;
   border: none;
   background-color: #f2f2f2;
 }
-.restaurant__card__content button:hover .fa-solid {
+.restaurant__card__content .heart:hover .fa-solid {
   opacity: 1;
   transition-duration: 0.5s;
 }
-.restaurant__card__content button:hover .fa-regular {
+.restaurant__card__content .heart:hover .fa-regular {
   opacity: 0;
 }
-.restaurant__card__content button i {
+.restaurant__card__content .heart i {
   position: absolute;
   width: 20px;
 }
-.restaurant__card__content button .fa-solid {
+.restaurant__card__content .heart .fa-solid {
   opacity: 0;
   transition-duration: 0.5s;
 }
-.restaurant__card__content button .fa-solid::before {
+.restaurant__card__content .heart .fa-solid::before {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
