@@ -140,6 +140,7 @@ main {
     margin-top: 27px;
     @include box-shadow.btn-gradiant-shadow;
     transition-duration: 1s;
+    
     &:hover {
       @include box-shadow.btn-gradiant-shadow-hover;
       background: linear-gradient(
