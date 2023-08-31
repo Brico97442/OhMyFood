@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/********général********/
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  background: #ae80e5;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  animation: disappear 1s ease 3s forwards;
+}
+.loader__circle {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 7px solid transparent;
+  border-top-color: #99e2d0;
+  animation: spin 2s linear infinite;
+}
+.loader__circle::before, .loader__circle::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 7px solid transparent;
+}
+.loader__circle::before {
+  inset: 10px;
+  border-top-color: #9356dc;
+  animation: spin 4s linear infinite;
+}
+.loader__circle::after {
+  inset: 25px;
+  border-top-color: #ff79da;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-300vh);
+  }
+}
+/********Header********/
+header {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+header .header__logo {
+  width: 162px;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+@media (min-width: 1024px) {
+  header .header__logo {
+    width: 200px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.location {
+  background-color: #eaeaea;
+}
+@media (min-width: 1024px) {
+  .location {
+    width: 100%;
+  }
+}
+.location__info {
+  gap: 17px;
+  margin: 15px 0;
+}
+.location__info h2 {
+  color: #353535;
+  font-size: 16px;
+}
+
+.explorer {
+  flex-direction: column;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 0 30px;
+}
+@media (min-width: 1024px) {
+  .explorer {
+    width: 100%;
+    padding: 0;
+  }
+}
+.explorer__btn {
+  width: 218px;
+  font-size: 16px;
+  padding: 13px 19px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(#9356dc, #ff79da);
+  color: #fff;
+  margin-bottom: 57px;
+  margin-top: 27px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  transition-duration: 1s;
+}
+.explorer__btn:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#ae80e5, #fface8);
+  transition-duration: 1s;
+}
+.explorer h1 {
+  max-width: 275px;
+  margin-top: 43px;
+}
+@media (min-width: 1024px) {
+  .explorer h1 {
+    max-width: 1080px;
+    font-size: 40px;
+  }
+}
+.explorer p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.fonctionnement {
+  padding: 0 20px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 68px;
+}
+@media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 0;
+    max-width: 1080px;
+    width: 100%;
+  }
+}
+.fonctionnement__tittle {
+  text-align: start;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__tittle {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .fonctionnement__tittle {
+    margin-left: 0px;
+  }
+}
+.fonctionnement__wrap {
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 26px;
+  width: 100%;
+  justify-content: start;
+}
+@media (min-width: 1024px) {
+  .fonctionnement__wrap {
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    gap: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .fonctionnement__wrap {
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    gap: 25px;
+  }
+}
+.fonctionnement__btn {
+  display: flex;
+  justify-content: left;
+  gap: 17px;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  padding: 27px 0px 27px 34px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 1024px) {
+  .fonctionnement__btn {
+    max-width: 335px;
+    margin: 0 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .fonctionnement__btn {
+    max-width: 335px;
+    margin: 0;
+  }
+}
+.fonctionnement__btn .fa-solid {
+  color: #353535;
+}
+.fonctionnement__btn .number {
+  position: absolute;
+  left: -7px;
+  background: #9356dc;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  color: #fff;
+}
+
+.restaurant {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+  padding-bottom: 65px;
+  padding-top: 50px;
+}
+@media (min-width: 1024px) {
+  .restaurant {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  .restaurant .restaurant__tittle {
+    width: 100%;
+    max-width: 1080px;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .restaurant {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  .restaurant .restaurant__tittle {
+    width: 100%;
+    max-width: 1080px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+.restaurant__card__wrap {
+  margin-top: 20px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media (min-width: 1024px) {
+  .restaurant__card__wrap {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin-bottom: 30px;
+  }
+}
+.restaurant__card__wrap .new {
+  position: relative;
+}
+.restaurant__card__wrap .new::before {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  content: "Nouveau";
+  width: 80px;
+  height: 29px;
+  background-color: #99e2d0;
+  border-radius: 3px;
+  color: #1b6150;
+  font-size: 14px;
+}
+.restaurant__card {
+  border-radius: 15px;
+  background-color: #fff;
+}
+@media (min-width: 1024px) {
+  .restaurant__card {
+    max-width: 463px;
+    width: 100%;
+    margin: 0 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .restaurant__card {
+    max-width: 490px;
+    width: 100%;
+    margin: 0;
+  }
+}
+.restaurant__card a {
+  text-decoration: none;
+  color: #000;
+}
+.restaurant__img {
+  object-fit: cover;
+  width: 100%;
+  height: 174px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.restaurant__card__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px;
+}
+.restaurant__card__content h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.restaurant__card__content p {
+  font-size: 17px;
+  font-weight: lighter;
+}
+.restaurant__card__content .heart {
+  margin-right: 15px;
+}
+.restaurant__card__content .heart {
+  display: flex;
+  border: none;
+  background-color: #f2f2f2;
+}
+.restaurant__card__content .heart:hover .fa-solid {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.restaurant__card__content .heart:hover .fa-regular {
+  opacity: 0;
+}
+.restaurant__card__content .heart i {
+  position: absolute;
+  width: 20px;
+}
+.restaurant__card__content .heart .fa-solid {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.restaurant__card__content .heart .fa-solid::before {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+}
+
+footer {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 16px;
+  color: #fff;
+  background-color: #353535;
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    padding: 65px 30px 30px 30px;
+  }
+}
+footer .footer__tittle h3 {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .footer__text {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+@media (min-width: 1024px) {
+  footer .footer__text {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+footer .footer__text a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+footer .footer__text p {
+  font-weight: 400;
+}
+footer .footer__text__icons {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+footer .footer__text__icons .fa-utensils {
+  width: 12px;
+  height: 13px;
+}
+footer .footer__text__icons .fa-handshake-angle {
+  width: 12px;
+  height: 13px;
+}
+footer .footer__text__icons p {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

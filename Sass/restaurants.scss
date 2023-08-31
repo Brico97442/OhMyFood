@@ -1,0 +1,348 @@
+@use "./mixins";
+@use "./utils/box-shadow";
+
+/********général********/
+
+$color-primary: #9356dc;
+$second-color: #ff79da;
+$third-color: #99e2d0;
+$background-section-first-color: #f2f2f2;
+$gradiant: linear-gradient(#9356dc, #ff79da);
+$colorgrandiant-primary: lighten(#9356dc, 10%);
+$colorgrandiant-secondary: lighten(#ff79da, 10%);
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-section-first-color;
+  @media (min-width: 1024px) {
+    background-color: #fff;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/********Header********/
+
+header {
+  @include box-shadow.header-shadow;
+  background-color: #fff;
+  padding: 0 23px;
+
+  nav {
+    width: 100%;
+
+    .back__home {
+      width: 40px;
+      height: 40px;
+      .fa-solid {
+        font-size: 17px;
+      }
+    }
+    .header__logo {
+      width: 100%;
+
+      .header__logo__img {
+        padding-right: 14px;
+        width: 162px;
+        margin-bottom: 14px;
+        margin-top: 14px;
+        @media (min-width: 1024px) {
+          width: 200px;
+          margin-bottom: 30px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1024px) {
+    align-items: center;
+  }
+  .background__img {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .slide {
+    padding: 0 13px;
+    background-color: $background-section-first-color;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    bottom: 55px;
+    @media (min-width: 1024px) {
+      padding: 0;
+      width: 100%;
+      max-width: 1055px;
+      @include mixins.flex-column;
+      align-items: center;
+    }
+    
+    .menu {
+      display: flex;
+      margin-top: 40px;
+      width: 100%;
+      
+      .slide-card {
+        animation: slide-dishes 1s ease normal forwards;
+      }
+
+      .delay__1 {
+        animation-delay:0.3s ;
+      }
+      .delay__2 {
+        animation-delay:0.6s ;
+      }
+      .delay__3 {
+        animation-delay:0.9s ;
+      }
+      @include mixins.flex-column;
+      @media (min-width: 1024px) {
+        max-width: 634px;
+      }
+
+      h2 {
+        @include mixins.sixteen-px;
+        font-weight: lighter;
+      }
+
+      hr {
+        background-color: $third-color;
+        height: 3px;
+        width: 40px;
+        border: none;
+        margin: 10px 0;
+      }
+
+      &__dishes {
+        gap: 12px;
+        display: flex;
+        list-style: none;
+        flex-direction: column;        
+        @keyframes slide-dishes {
+          0% {
+            opacity: 0;
+            transform: translateX(20rem);
+          }
+        
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+
+        &__content {
+          @include mixins.radius15;
+          display: flex;
+          justify-content: space-between;
+          background-color: #fff;
+          padding: 15px;
+          overflow: hidden;
+          @include box-shadow.btn-shadow;
+          &:hover {
+            .checkbox {
+              display: flex;
+              cursor: pointer;
+              margin-right: -15px;
+            }
+          }
+
+          &__text {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
+            h3 {
+              @include mixins.heighteen-px;
+              font-weight: 700;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+            p {
+              @include mixins.fiveteen-px;
+              margin-top: 5px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
+          }
+
+          &__price {
+            display: flex;
+            align-items: flex-end;
+            @include mixins.fiveteen-px;
+            font-weight: bold;
+            p {
+              margin-right: 15px;
+            }
+          }
+          .checkbox {
+            margin-right: -74px;
+            margin-top: -15px;
+            margin-bottom: -15px;
+            padding: 15px 0;
+            background-color: $third-color;
+            width: 59px;
+            height: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            transition-duration: 0.5s;
+            .fa-solid {
+              color: #fff;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    &__tittle {
+      width: 100%;
+      max-width: 307px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 32px;
+
+      button {
+        display: flex;
+        border: none;
+        background-color: $background-section-first-color;
+
+        &:hover {
+          .fa-solid {
+            opacity: 1;
+            transition-duration: 0.5s;
+          }
+          .fa-regular {
+            opacity: 0;
+          }
+        }
+        i {
+          position: absolute;
+          width: 20px;
+        }
+
+        .fa-solid {
+          opacity: 0;
+          transition-duration: 0.5s;
+          &::before {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient($color-primary, $second-color);
+          }
+        }
+      }
+
+      &__text {
+        h1 {
+          font-family: "Shrikhand";
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .search {
+    &__btn {
+      @include mixins.sixteen-px;
+      padding: 16px 48px;
+      border-radius: 25px;
+      border: none;
+      background: $gradiant;
+      color: #fff;
+      margin-top: 40px;
+      @include box-shadow.btn-gradiant-shadow;
+      transition-duration: 0.5s;
+      &:hover {
+        @include box-shadow.btn-gradiant-shadow-hover;
+        background: linear-gradient(
+          $colorgrandiant-primary,
+          $colorgrandiant-secondary
+        );
+        transition-duration: 0.5s;
+      }
+      @media (min-width: 1024px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  @include mixins.flex-column;
+  padding: 25px;
+  gap: 16px;
+  color: #fff;
+  background-color: #353535;
+  @media (min-width: 1024px) {
+    margin-top: -55px;
+    flex-direction: row-reverse;
+  }
+  .footer__tittle {
+    h3 {
+      font-family: "Shrikhand";
+      @include mixins.heighteen-px;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 50px;
+    }
+  }
+  .footer__text {
+    display: flex;
+    @include mixins.flex-column;
+    gap: 7px;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    p {
+      font-weight: 400;
+    }
+
+    &__icons {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+
+      .fa-utensils {
+        width: 12px;
+        height: 13px;
+      }
+
+      .fa-handshake-angle {
+        width: 12px;
+        height: 13px;
+      }
+
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}
