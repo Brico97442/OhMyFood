@@ -172,12 +172,12 @@ header .header__logo {
   width: 100%;
 }
 @media (min-width: 1024px) {
-  .fonctionnement__tittle {
-    margin-left: 40px;
+  .fonctionnement__tittle h2 {
+    margin-left: 20px;
   }
 }
 @media (min-width: 1280px) {
-  .fonctionnement__tittle {
+  .fonctionnement__tittle h2 {
     margin-left: 0px;
   }
 }
@@ -259,7 +259,9 @@ header .header__logo {
     width: 100%;
     max-width: 1080px;
     margin-top: 30px;
-    margin-left: 40px;
+  }
+  .restaurant .restaurant__tittle h2 {
+    margin-left: 20px;
   }
 }
 @media (min-width: 1280px) {
@@ -271,7 +273,9 @@ header .header__logo {
   .restaurant .restaurant__tittle {
     max-width: 1080px;
     margin-top: 30px;
-    margin-left: 0;
+  }
+  .restaurant .restaurant__tittle h2 {
+    margin-left: 0px;
   }
 }
 .restaurant__card__wrap {
