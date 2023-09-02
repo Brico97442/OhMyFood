@@ -97,13 +97,10 @@ main .slide .menu .slide-card {
   animation: slide-dishes 1s ease normal forwards;
 }
 main .slide .menu .delay__1 {
-  animation-delay: 0.3s;
+  animation-delay: 0.25s;
 }
 main .slide .menu .delay__2 {
-  animation-delay: 0.6s;
-}
-main .slide .menu .delay__3 {
-  animation-delay: 0.9s;
+  animation-delay: 0.5s;
 }
 @media (min-width: 1024px) {
   main .slide .menu {
