@@ -320,16 +320,19 @@ main {
   &__card {
     @include mixins.radius15;
     background-color: #fff;
+    
     @media (min-width: 1024px) {
       max-width: 463px;
       width: 100%;
       margin: 0 20px;
     }
+    
     @media (min-width: 1280px) {
       max-width: 490px;
       width: 100%;
       margin: 0;
     }
+    
     a {
       text-decoration: none;
       color: #000;
