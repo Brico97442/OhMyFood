@@ -140,10 +140,7 @@ main {
     margin-top: 27px;
     @include box-shadow.btn-gradiant-shadow;
     transition-duration: 1s;
-<<<<<<< HEAD
 
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
     &:hover {
       @include box-shadow.btn-gradiant-shadow-hover;
       background: linear-gradient(
@@ -183,7 +180,6 @@ main {
   &__tittle {
     text-align: start;
     width: 100%;
-<<<<<<< HEAD
     @media (min-width: 1024px) {
       h2 {
         margin-left: 20px;
@@ -194,8 +190,6 @@ main {
         margin-left: 0px;
       }
     }
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
   }
 
   &__wrap {
@@ -207,15 +201,12 @@ main {
     @media (min-width: 1024px) {
       flex-wrap: nowrap;
       margin-bottom: 50px;
-<<<<<<< HEAD
       gap: 0;
     }
     @media (min-width: 1280px) {
       flex-wrap: nowrap;
       margin-bottom: 50px;
       gap: 25px;
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
     }
   }
 
@@ -234,14 +225,11 @@ main {
 
     @media (min-width: 1024px) {
       max-width: 335px;
-<<<<<<< HEAD
       margin: 0 20px;
     }
     @media (min-width: 1280px) {
       max-width: 335px;
       margin: 0;
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
     }
     .fa-solid {
       color: #353535;
@@ -271,7 +259,6 @@ main {
     align-items: center;
     padding: 0;
     @include mixins.fullwidth;
-<<<<<<< HEAD
 
     .restaurant__tittle {
       @include mixins.fullwidth;
@@ -293,12 +280,6 @@ main {
       h2 {
         margin-left: 0px;
       }
-=======
-    .restaurant__tittle {
-      width: 100%;
-      max-width: 1080px;
-      margin-top: 30px;
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
     }
   }
 
@@ -315,10 +296,7 @@ main {
       max-width: 1080px;
       margin-bottom: 30px;
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
     .new {
       position: relative;
 
@@ -342,7 +320,6 @@ main {
   &__card {
     @include mixins.radius15;
     background-color: #fff;
-<<<<<<< HEAD
     
     @media (min-width: 1024px) {
       max-width: 463px;
@@ -356,12 +333,6 @@ main {
       margin: 0;
     }
     
-=======
-    @media (min-width: 1024px) {
-      max-width: 490px;
-      width: 100%;
-    }
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
     a {
       text-decoration: none;
       color: #000;
@@ -390,11 +361,7 @@ main {
       font-size: 17px;
       font-weight: lighter;
     }
-<<<<<<< HEAD
     .heart {
-=======
-    .heart{
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
       margin-right: 15px;
     }
     .heart {
@@ -403,41 +370,26 @@ main {
       background-color: $background-section-first-color;
 
       &:hover {
-<<<<<<< HEAD
         
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
         .fa-solid {
           opacity: 1;
           transition-duration: 0.5s;
         }
-<<<<<<< HEAD
         
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
         .fa-regular {
           opacity: 0;
         }
       }
-<<<<<<< HEAD
       
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
       i {
         position: absolute;
         width: 20px;
       }
-<<<<<<< HEAD
       
       .fa-solid {
         opacity: 0;
         transition-duration: 0.5s;
         
-=======
-      .fa-solid {
-        opacity: 0;
-        transition-duration: 0.5s;
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
         &::before {
           background-clip: text;
           -webkit-background-clip: text;
@@ -470,10 +422,7 @@ footer {
     display: flex;
     @include mixins.flex-column;
     gap: 7px;
-<<<<<<< HEAD
     
-=======
->>>>>>> 3e59d7d8f8179189cc4428de44f1d8fd82ec7ffa
     @media (min-width: 1024px) {
       flex-direction: row;
       align-items: center;
