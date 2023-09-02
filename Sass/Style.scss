@@ -140,7 +140,7 @@ main {
     margin-top: 27px;
     @include box-shadow.btn-gradiant-shadow;
     transition-duration: 1s;
-    
+
     &:hover {
       @include box-shadow.btn-gradiant-shadow-hover;
       background: linear-gradient(
@@ -181,12 +181,12 @@ main {
     text-align: start;
     width: 100%;
     @media (min-width: 1024px) {
-      h2{
+      h2 {
         margin-left: 20px;
       }
     }
     @media (min-width: 1280px) {
-      h2{
+      h2 {
         margin-left: 0px;
       }
     }
@@ -259,12 +259,12 @@ main {
     align-items: center;
     padding: 0;
     @include mixins.fullwidth;
-    
+
     .restaurant__tittle {
       @include mixins.fullwidth;
       max-width: 1080px;
       margin-top: 30px;
-      h2{
+      h2 {
         margin-left: 20px;
       }
     }
@@ -273,10 +273,11 @@ main {
     align-items: center;
     padding: 0;
     @include mixins.fullwidth;
+
     .restaurant__tittle {
       max-width: 1080px;
       margin-top: 30px;
-      h2{
+      h2 {
         margin-left: 0px;
       }
     }
