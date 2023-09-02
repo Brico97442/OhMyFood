@@ -178,6 +178,7 @@ main .slide .menu__dishes__content__price {
   font-weight: bold;
 }
 main .slide .menu__dishes__content__price p {
+  margin-left: 15px;
   margin-right: 15px;
 }
 main .slide .menu__dishes__content .checkbox {
