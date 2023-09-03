@@ -19,7 +19,7 @@
   inset: 0;
   z-index: 1;
   opacity: 0.8;
-  animation: disappear 1s ease 3s forwards;
+  animation: disappear 1s ease 2s forwards;
 }
 .loader__circle {
   display: block;
@@ -403,6 +403,11 @@ footer .footer__tittle h3 {
   font-family: "Shrikhand";
   font-size: 18px;
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  footer .footer__tittle h3 {
+    margin-right: 35px;
+  }
 }
 footer .footer__text {
   display: flex;

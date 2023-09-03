@@ -300,6 +300,7 @@ footer {
     }
     @media (min-width: 1024px) {
       margin-top: 50px;
+      margin-right: 35px;
     }
   }
   .footer__text {
@@ -316,10 +317,18 @@ footer {
       text-decoration: none;
       color: #fff;
       font-weight: 400;
+      @media (min-width: 1024px) {
+        margin-right:75px ;
+      }
     }
 
     p {
       font-weight: 400;
+    }
+    .margin_right {
+      @media (min-width: 1024px) {
+        margin-right: 40px;
+      }
     }
 
     &__icons {
@@ -328,13 +337,11 @@ footer {
       gap: 11px;
 
       .fa-utensils {
-        width: 12px;
-        height: 13px;
+        font-weight: 13px;
       }
 
       .fa-handshake-angle {
-        width: 12px;
-        height: 13px;
+        font-weight: 13px;
       }
 
       p {

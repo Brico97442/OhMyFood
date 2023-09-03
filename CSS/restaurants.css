@@ -276,6 +276,7 @@ footer .footer__tittle h3 {
 @media (min-width: 1024px) {
   footer .footer__tittle {
     margin-top: 50px;
+    margin-right: 35px;
   }
 }
 footer .footer__text {
@@ -296,8 +297,18 @@ footer .footer__text a {
   color: #fff;
   font-weight: 400;
 }
+@media (min-width: 1024px) {
+  footer .footer__text a {
+    margin-right: 75px;
+  }
+}
 footer .footer__text p {
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  footer .footer__text .margin_right {
+    margin-right: 40px;
+  }
 }
 footer .footer__text__icons {
   display: flex;
@@ -305,12 +316,10 @@ footer .footer__text__icons {
   gap: 11px;
 }
 footer .footer__text__icons .fa-utensils {
-  width: 12px;
-  height: 13px;
+  font-weight: 13px;
 }
 footer .footer__text__icons .fa-handshake-angle {
-  width: 12px;
-  height: 13px;
+  font-weight: 13px;
 }
 footer .footer__text__icons p {
   font-weight: 500;
