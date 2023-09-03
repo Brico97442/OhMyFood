@@ -389,7 +389,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 25px;
-  gap: 16px;
+  gap: 15px;
   color: #fff;
   background-color: #353535;
 }
@@ -421,8 +421,18 @@ footer .footer__text a {
   color: #fff;
   font-weight: 400;
 }
+@media (min-width: 1024px) {
+  footer .footer__text a {
+    margin-right: 75px;
+  }
+}
 footer .footer__text p {
   font-weight: 400;
+}
+@media (min-width: 1024px) {
+  footer .footer__text .margin_right {
+    margin-right: 40px;
+  }
 }
 footer .footer__text__icons {
   display: flex;
@@ -430,12 +440,10 @@ footer .footer__text__icons {
   gap: 11px;
 }
 footer .footer__text__icons .fa-utensils {
-  width: 12px;
-  height: 13px;
+  font-weight: 13px;
 }
 footer .footer__text__icons .fa-handshake-angle {
-  width: 12px;
-  height: 13px;
+  font-weight: 13px;
 }
 footer .footer__text__icons p {
   font-weight: 500;

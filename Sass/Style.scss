@@ -320,19 +320,19 @@ main {
   &__card {
     @include mixins.radius15;
     background-color: #fff;
-    
+
     @media (min-width: 1024px) {
       max-width: 463px;
       width: 100%;
       margin: 0 20px;
     }
-    
+
     @media (min-width: 1280px) {
       max-width: 490px;
       width: 100%;
       margin: 0;
     }
-    
+
     a {
       text-decoration: none;
       color: #000;
@@ -370,26 +370,25 @@ main {
       background-color: $background-section-first-color;
 
       &:hover {
-        
         .fa-solid {
           opacity: 1;
           transition-duration: 0.5s;
         }
-        
+
         .fa-regular {
           opacity: 0;
         }
       }
-      
+
       i {
         position: absolute;
         width: 20px;
       }
-      
+
       .fa-solid {
         opacity: 0;
         transition-duration: 0.5s;
-        
+
         &::before {
           background-clip: text;
           -webkit-background-clip: text;
@@ -405,7 +404,7 @@ footer {
   display: flex;
   @include mixins.flex-column;
   padding: 25px;
-  gap: 16px;
+  gap: 15px;
   color: #fff;
   background-color: #353535;
   @media (min-width: 1024px) {
@@ -422,7 +421,7 @@ footer {
     display: flex;
     @include mixins.flex-column;
     gap: 7px;
-    
+
     @media (min-width: 1024px) {
       flex-direction: row;
       align-items: center;
@@ -432,10 +431,19 @@ footer {
       text-decoration: none;
       color: #fff;
       font-weight: 400;
+      @media (min-width: 1024px) {
+        margin-right:75px ;
+      }
     }
 
     p {
       font-weight: 400;
+    }
+
+    .margin_right {
+      @media (min-width: 1024px) {
+        margin-right: 40px;
+      }
     }
 
     &__icons {
@@ -444,13 +452,11 @@ footer {
       gap: 11px;
 
       .fa-utensils {
-        width: 12px;
-        height: 13px;
+        font-weight: 13px;
       }
 
       .fa-handshake-angle {
-        width: 12px;
-        height: 13px;
+        font-weight: 13px;
       }
 
       p {
