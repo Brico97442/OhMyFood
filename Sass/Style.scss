@@ -222,6 +222,11 @@ main {
     border: none;
     background-color: #f6f6f6;
     @include box-shadow.btn-shadow;
+    &:hover{
+      .fa-solid {
+        color: $color-primary;
+      }
+    }
 
     @media (min-width: 1024px) {
       max-width: 335px;
@@ -429,6 +434,7 @@ footer {
     @media (min-width: 1024px) {
       flex-direction: row;
       align-items: center;
+      gap: 15px;
     }
 
     a {
@@ -454,6 +460,10 @@ footer {
       display: flex;
       align-items: center;
       gap: 11px;
+
+      @media (min-width: 1024px) {
+        gap: 15px;
+      }
 
       .fa-utensils {
         font-weight: 13px;
