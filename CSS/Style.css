@@ -453,12 +453,6 @@ footer .footer__text__icons {
     gap: 15px;
   }
 }
-footer .footer__text__icons .fa-utensils {
-  font-weight: 13px;
-}
-footer .footer__text__icons .fa-handshake-angle {
-  font-weight: 13px;
-}
 footer .footer__text__icons p {
   font-weight: 500;
 }
